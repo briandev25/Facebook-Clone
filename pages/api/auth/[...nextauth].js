@@ -1,8 +1,8 @@
-import NextAuth from 'next-auth/next'
-import FacebookProvider from 'next-auth/providers/facebook'
+import NextAuth from "next-auth/next";
+import FacebookProvider from 'next-auth/providers/facebook';
 
 export default NextAuth({
-    Providers:[
+    providers:[
         FacebookProvider({
             clientId:process.env.FACEBOOK_ID,
             clientSecret:process.env.FACEBOOK_SECRET

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import { getSession } from 'next-auth/react'
  import Login from '../components/Login';
+import Sidebar from '../components/Sidebar';
 
 export default function Home({session}) {
    if(!session) {
@@ -15,6 +16,9 @@ export default function Home({session}) {
           <link rel="icon" href="/icons8-facebook-48.png" />
         </Head>
         <Header />
+        <main>
+          <Sidebar />
+        </main>
       </div>
     )
    }

@@ -7,7 +7,7 @@ import SidebarRow from './SidebarRow';
 function Sidebar() {
     const {data: session} = useSession();
   return (
-    <div className='p-2 mt-5 hidden lg:block max-w-[300px]'>
+    <div className='p-2 mt-5 hidden lg:block min-w-[300px]'>
         <SidebarRow src={session.user.image}  title={session.user.name} />
        <SidebarRow Icon={UsersIcon} title='Friends' />
        <SidebarRow Icon={UserGroupIcon}  title='Groups'/>
